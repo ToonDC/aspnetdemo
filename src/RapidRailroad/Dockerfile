@@ -7,6 +7,6 @@ WORKDIR /app
 RUN ["dnu","restore"]
 
 # Open this port in the container
-EXPOSE 80
+EXPOSE 5000
 # Start application
 ENTRYPOINT ["dnx","-p","project.json", "web"]
